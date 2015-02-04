@@ -25,6 +25,8 @@ end
 
 gem 'puma', '2.6.0'
 
+gem 'calagator', path: '../calagator'
+
 # Run-time dependencies
 gem 'rails', '3.2.19'
 gem 'rails_autolink', '1.1.3'
