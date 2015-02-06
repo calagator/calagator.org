@@ -11,19 +11,11 @@ end
 
 module Calagator
   class Application < Rails::Application
-    #---[ Path -------------------------------------------------------------
-
-    config.autoload_paths += %W(
-      #{config.root}/app/mixins
-      #{config.root}/app/observers
-      #{config.root}/lib
-    )
-
     #---[ Rails ]-----------------------------------------------------------
 
     # Activate observers that should always be running
     # config.active_record.observers = :cacher, :garbage_collector
-    config.active_record.observers = :cache_observer
+    config.active_record.observers = "Calagator::CacheObserver"
 
     # Deliver email using sendmail by default
     config.action_mailer.delivery_method = :sendmail
