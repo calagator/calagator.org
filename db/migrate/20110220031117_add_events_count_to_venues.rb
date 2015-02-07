@@ -1,11 +1,6 @@
 class AddEventsCountToVenues < ActiveRecord::Migration
   def self.up
     add_column :venues, :events_count, :integer
-
-    Venue.reset_column_information
-    Venue.all.each do |p|
-      Venue.update_counters p.id, :events_count => p.events.length
-    end
   end
 
   def self.down
