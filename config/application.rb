@@ -43,7 +43,9 @@ module Calagator
     config.assets.precompile += [
       "leaflet.js",
       "leaflet_google_layer.js",
-      "errors.css"
+      "errors.css",
+      "mobile.css",
+      "print.css"
     ]
 
     #---[ Rack Middleware ]-------------------------------------------------
@@ -56,20 +58,7 @@ module Calagator
       g.ensure(true) { |ex| env['rack.errors'].write(ex.message.to_s.encode('UTF-8', {:invalid => :replace, :undef => :replace, :replace => '?'})) }
     end
 
-    #---[ Secrets and settings ]--------------------------------------------
-
-    config.before_initialize do
-      # Read secrets
-      require 'secrets_reader'
-      ::SECRETS = SecretsReader.read
-
-      # Read theme settings
-      require 'settings_reader'
-      ::SETTINGS = SettingsReader.read(Rails.root.join('config','settings.yml'))
-
-      # Set timezone for Rails
-      config.time_zone = SETTINGS.timezone || 'Pacific Time (US & Canada)'
-    end
+    config.time_zone = 'Pacific Time (US & Canada)'
 
     # Set timezone for OS
     config.after_initialize do

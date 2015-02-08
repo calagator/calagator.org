@@ -8,7 +8,7 @@ if ENV['NOTIFY_ON_EXCEPTIONS'] || %w[preview production].include?(Rails.env)
   end
 
   Calagator::Application.config.middleware.use ExceptionNotifier,
-    :email_prefix => "[ERROR #{SETTINGS.name}] ",
+    :email_prefix => "[ERROR Calagator] ",
     :sender_address => "#{SECRETS.administrator_email}",
     :exception_recipients => [SECRETS.administrator_email]
 end

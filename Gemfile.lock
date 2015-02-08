@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/calagator/calagator.git
-  revision: 0ee5602f9167cc21e5d7da46035a4655bb51f0d7
+  revision: d2c3c2efa58b187519368bc5c4ca32733848d405
   branch: engine
   specs:
     calagator (0.0.1)
