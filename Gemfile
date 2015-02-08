@@ -11,18 +11,7 @@
 
 source 'https://rubygems.org'
 
-# Database driver
-require "./lib/database_yml_reader"
-adapter = DatabaseYmlReader.read.adapter
-case adapter
-when 'pg', 'postgresql'
-  gem 'pg'
-when 'mysql2'
-  gem 'mysql2', '~> 0.3.11'
-else
-  gem adapter
-end
-
+gem 'sqlite3'
 gem 'puma', '2.6.0'
 
 gem 'calagator', github: 'calagator/calagator', branch: 'engine'
@@ -44,38 +33,11 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'faker', '1.4.3'
 
-  # Do not install these interactive libraries onto the continuous integration server.
-  unless ENV['CI'] || ENV['TRAVIS']
-    # Deployment
-    gem 'capistrano', '3.0.1'
-    gem 'capistrano-rails', '1.0.0'
-    gem 'capistrano-bundler', '1.0.0'
+  gem 'capistrano', '3.0.1'
+  gem 'capistrano-rails', '1.0.0'
+  gem 'capistrano-bundler', '1.0.0'
 
-    # Guard and plugins
-    platforms :mri do
-      gem 'guard', '~> 1.3.0'
-      gem 'guard-rspec', '~> 1.2.1'
-    end
-
-    # Guard notifier
-    case RUBY_PLATFORM
-    when /-*darwin.*/ then gem 'growl'
-    when /-*linux.*/ then gem 'libnotify'
-    end
-  end
-
-  # Optional libraries add debugging and code coverage functionality, but are not
-  # needed otherwise. These are not activated by default because they may cause
-  # Ruby or RVM to hang, complicate installation, and upset travis-ci. To
-  # activate them, create a `.dev` file and rerun Bundler, e.g.:
-  #
-  #   touch .dev && bundle
-  if File.exist?(".dev")
-    platforms :mri do
-      gem 'byebug'
-      gem 'simplecov'
-    end
-  end
+  gem 'byebug'
 end
 
 group :development do
@@ -90,6 +52,7 @@ group :test do
   gem 'poltergeist', '1.5.1'
   gem 'timecop', '~> 0.7'
   gem 'webmock', '~> 1.20'
+  gem 'simplecov'
 end
 
 # Gems used only for assets and not required
@@ -108,5 +71,3 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-# Load additional gems from "Gemfile.local" if it exists
-eval_gemfile "Gemfile.local" if File.exist?("Gemfile.local")
