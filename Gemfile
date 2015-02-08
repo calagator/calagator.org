@@ -25,8 +25,7 @@ end
 
 gem 'puma', '2.6.0'
 
-gem 'calagator', github: 'botandrose/calagator', branch: 'engine'
-# gem 'calagator', path: '../calagator'
+gem 'calagator', github: 'calagator/calagator', branch: 'engine'
 
 gem 'rails', '3.2.19'
 gem 'exception_notification', '2.6.1'
