@@ -2,16 +2,9 @@ sudo: false
 language: ruby
 rvm:
   - 2.1.0
-env:
-  matrix:
-    - DB=postgresql
-
-before_install:
-  - ruby ci/copy_database_config.rb
 
 before_script:
-  - psql -c 'create database calagator_test;' -U postgres
-  - bundle exec rake db:migrate
+  - bundle exec rake db:create db:migrate
   - cp "config/secrets.yml.sample" "config/secrets.yml"
   - bundle exec rake sunspot:solr:start_with_waiting
 script:

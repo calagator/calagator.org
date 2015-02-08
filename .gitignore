@@ -5,15 +5,11 @@
 *.swp
 *.tmp
 *~
-.dev
 .dtach
 .rvmrc
 .vagrant
-Gemfile.local
-Gemfile.lock
 Makefile
 Vagrantfile.local
-config/database~custom.yml
 config/geocoder_api_keys.yml
 config/mongrel_cluster.yml
 config/newrelic.yml
