@@ -11,7 +11,7 @@
 
 source 'https://rubygems.org'
 
-gem 'sqlite3'
+gem 'pg'
 gem 'puma', '2.6.0'
 
 gem 'calagator', github: 'calagator/calagator', branch: 'engine'
