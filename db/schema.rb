@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120831234448) do
+ActiveRecord::Schema.define(:version => 20150207231355) do
 
   create_table "events", :force => true do |t|
     t.string   "title"
@@ -19,13 +19,14 @@ ActiveRecord::Schema.define(:version => 20120831234448) do
     t.datetime "start_time"
     t.integer  "venue_id"
     t.string   "url"
-    t.datetime "created_at",      :null => false
-    t.datetime "updated_at",      :null => false
+    t.datetime "created_at",                         :null => false
+    t.datetime "updated_at",                         :null => false
     t.integer  "source_id"
     t.integer  "duplicate_of_id"
     t.datetime "end_time"
     t.string   "rrule"
     t.text     "venue_details"
+    t.boolean  "locked",          :default => false
   end
 
   create_table "sources", :force => true do |t|
@@ -55,13 +56,6 @@ ActiveRecord::Schema.define(:version => 20120831234448) do
   end
 
   add_index "tags", ["name"], :name => "index_tags_on_name", :unique => true
-
-  create_table "updates", :force => true do |t|
-    t.integer  "source_id"
-    t.text     "status"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
 
   create_table "venues", :force => true do |t|
     t.string   "title"
