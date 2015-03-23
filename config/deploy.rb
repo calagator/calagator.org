@@ -1,5 +1,5 @@
 set :application, 'calagator'
-set :repo_url, 'git@github.com:calagator/calagator.git'
+set :repo_url, 'git@github.com:calagator/calagator.org.git'
 
 ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
