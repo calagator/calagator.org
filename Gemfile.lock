@@ -1,11 +1,11 @@
 GIT
   remote: https://github.com/calagator/calagator.git
-  revision: c0c8021637a3c49b114f9a75de6d4d0f1295d6bc
+  revision: 198ac9358694a21e9a6cfc9f4ef944e92d583300
   specs:
     calagator (0.0.1)
       acts-as-taggable-on (~> 3.5)
       bluecloth (~> 2.2)
-      font-awesome-rails (~> 3.2)
+      font-awesome-rails (~> 4.3)
       formtastic (~> 3.1)
       geokit (~> 1.9.0)
       htmlentities (~> 4.3)
@@ -100,7 +100,7 @@ GEM
       unf (>= 0.0.5, < 1.0.0)
     erubis (2.7.0)
     execjs (2.5.2)
-    font-awesome-rails (3.2.1.3)
+    font-awesome-rails (4.3.0.0)
       railties (>= 3.2, < 5.0)
     formtastic (3.1.3)
       actionpack (>= 3.2.13)
