@@ -4,9 +4,8 @@ language: ruby
 rvm:
   - 2.1.5
 
-before_script:
-  - bin/rake db:migrate
-
 script:
+  - bin/rake db:migrate
+  - bin/rake assets:precompile
   - bin/rspec
 
