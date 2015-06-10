@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'paper_trail_manager', git: 'https://github.com/reidab/paper_trail_manager.git', ref: 'engine-context'
 gem 'calagator', git: 'https://github.com/calagator/calagator.git'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
