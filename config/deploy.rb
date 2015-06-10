@@ -8,7 +8,7 @@ ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
 set :deploy_to, '/var/www/calagator'
 
-set :linked_files, %w{ config/database.yml }
+set :linked_files, %w{ config/database.yml config/newrelic.yml config/initializers/errbit.rb }
 
 set :linked_dirs, %w{
   log
