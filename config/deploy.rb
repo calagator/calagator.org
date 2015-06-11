@@ -66,6 +66,7 @@ before  'deploy:assets:precompile', 'deploy:migrate'
 before  'deploy:migrate', 'deploy:create_shared_db_dir'
 after   'deploy:updated', 'deploy:clear_cache'
 after   'deploy:updated', 'deploy:restart'
+after   'deploy:published', 'airbrake:deploy'
 
 namespace :calagator do
   desc "Update counter caches"
