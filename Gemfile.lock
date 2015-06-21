@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/calagator/calagator.git
-  revision: 833ba74eeb048fd4757c932eddfdde153efb9547
+  revision: 3539b4fe6a557f9cec7c0fbd455496dd0c129530
   specs:
     calagator (1.0.0.rc2)
       acts-as-taggable-on (~> 3.5)
@@ -15,7 +15,7 @@ GIT
       loofah-activerecord (~> 1.2)
       lucene_query (= 0.1)
       nokogiri
-      paper_trail_manager (~> 0.4)
+      paper_trail_manager (~> 0.5)
       rails (~> 4.0)
       rails-observers
       rails_autolink (~> 1.1)
@@ -142,10 +142,9 @@ GEM
     paper_trail (3.0.8)
       activerecord (>= 3.0, < 5.0)
       activesupport (>= 3.0, < 5.0)
-    paper_trail_manager (0.4.0)
+    paper_trail_manager (0.5.0)
       paper_trail (~> 3.0)
       rails (>= 3.0, < 5.0)
-      will_paginate (~> 3.0)
     pr_geohash (1.0.0)
     progress_bar (1.0.0)
       highline (~> 1.6.1)
