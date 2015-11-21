@@ -1,11 +1,12 @@
 sudo: false
 language: ruby
-
 rvm:
-  - 2.1.5
-
+- 2.1.5
 script:
-  - bin/rake db:migrate
-  - bin/rake assets:precompile
-  - bin/rspec
-
+- bin/rake db:migrate
+- bin/rake assets:precompile
+- bin/rspec
+after_success:
+- openssl aes-256-cbc -K $encrypted_b0620c3c48f9_key -iv $encrypted_b0620c3c48f9_iv
+  -in config/deploy/deploy_rsa.enc -out config/deploy/deploy_rsa -d
+- "[[ $TRAVIS_BRANCH = 'master' ]] && bundle exec cap production deploy"
