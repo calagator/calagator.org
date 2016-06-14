@@ -11,6 +11,7 @@ alprazolam
 ambien
 amoxicillin
 anabolizante
+antabuse
 atarax
 ativan
 azithromycin
@@ -31,11 +32,13 @@ doxycycline
 ephedrine
 furosemide
 hydrocodone
+indocin
 kamagra
 klonopin
 lexapro
 levitra
 megashare
+\bmg\s+tablets\b
 \bmichael\s+jackson\s+died\b
 mobic
 modafinil
@@ -61,6 +64,7 @@ tretinoin
 \bugg\s+boots\b
 \buiouoiuiuoi\b
 valium
+vermox
 viagra
 vicodin
 \walgreens\b
