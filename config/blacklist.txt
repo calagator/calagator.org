@@ -17,6 +17,7 @@ ativan
 azithromycin
 \bbuy\s+(cheap|generic)\b
 \bcash\s*loans\b
+buspar
 celexa
 celebrex
 cephalexin
@@ -31,6 +32,7 @@ diazepam
 doxycycline
 ephedrine
 furosemide
+\bgeneric\s+cost\b
 hydrocodone
 indocin
 kamagra
@@ -57,6 +59,7 @@ psoriasis
 ritalin
 \bsex\s+tape\b
 sildenafil
+singulair
 tamiflu
 tramadol
 trazodone
@@ -70,6 +73,7 @@ vicodin
 \walgreens\b
 wholesale
 xanax
+zoloft
 \bКупить\s+участок\b
 \bзнакомства\s+свингеры\s+тюмень\b
 painmanage@hotmail.com
