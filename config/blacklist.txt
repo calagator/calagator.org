@@ -9,6 +9,7 @@ adderall
 adipex
 alprazolam
 ambien
+ampicillin
 amoxicillin
 anabolizante
 antabuse
@@ -39,6 +40,7 @@ kamagra
 klonopin
 lexapro
 levitra
+medrol
 megashare
 \bmg\s+tablets\b
 \bmichael\s+jackson\s+died\b
@@ -49,6 +51,7 @@ nexium
 oakley
 \bpayday\s*loan\b
 \bpharmacy\b
+phenergan
 propranolol
 propecia
 provera
