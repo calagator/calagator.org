@@ -7,6 +7,8 @@
 accutane
 adderall
 adipex
+albendazole
+albuterol
 alprazolam
 ambien
 ampicillin
@@ -52,6 +54,7 @@ oakley
 \bpayday\s*loan\b
 \bpharmacy\b
 phenergan
+proair
 propranolol
 propecia
 provera
@@ -63,6 +66,7 @@ ritalin
 \bsex\s+tape\b
 sildenafil
 singulair
+sulfate
 tamiflu
 tramadol
 trazodone
@@ -76,6 +80,7 @@ vicodin
 \walgreens\b
 wholesale
 xanax
+zithro
 zoloft
 \bКупить\s+участок\b
 \bзнакомства\s+свингеры\s+тюмень\b
