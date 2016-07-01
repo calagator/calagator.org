@@ -48,6 +48,7 @@ megashare
 \bmichael\s+jackson\s+died\b
 mobic
 modafinil
+motilium
 naivahita
 nexium
 oakley
@@ -67,6 +68,7 @@ ritalin
 sildenafil
 singulair
 sulfate
+tadalafil
 tamiflu
 tramadol
 trazodone
@@ -78,6 +80,7 @@ vermox
 viagra
 vicodin
 \walgreens\b
+wellbutrin
 wholesale
 xanax
 zithro
