@@ -30,6 +30,7 @@ cleocin
 clomid
 dfadlmox
 deltasone
+diclofenac
 dipropionate
 diazepam
 doxycycline
@@ -68,9 +69,11 @@ ritalin
 sildenafil
 singulair
 sulfate
+synthroid
 tadalafil
 tamiflu
 tramadol
+trandate
 trazodone
 tretinoin
 \bugg\s+boots\b
@@ -89,3 +92,4 @@ zoloft
 \bзнакомства\s+свингеры\s+тюмень\b
 painmanage@hotmail.com
 painrelief@hotmail.com
+\d+\s*(g|mg)
