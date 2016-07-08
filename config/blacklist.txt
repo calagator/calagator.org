@@ -15,6 +15,7 @@ ampicillin
 amoxicillin
 anabolizante
 antabuse
+antibiotics
 atarax
 ativan
 azithromycin
@@ -37,6 +38,7 @@ doxycycline
 ephedrine
 furosemide
 \bgeneric\s+cost\b
+glucophage
 hydrocodone
 indocin
 kamagra
@@ -52,7 +54,9 @@ modafinil
 motilium
 naivahita
 nexium
+nolvadex
 oakley
+pamelor
 \bpayday\s*loan\b
 \bpharmacy\b
 phenergan
@@ -65,6 +69,7 @@ psoriasis
 \bquick\s*cash\b
 \bquick\s*loans\b
 ritalin
+seroquel
 \bsex\s+tape\b
 sildenafil
 singulair
@@ -72,6 +77,7 @@ sulfate
 synthroid
 tadalafil
 tamiflu
+tetracycline
 tramadol
 trandate
 trazodone
