@@ -57,7 +57,7 @@ nexium
 nolvadex
 oakley
 pamelor
-\bpayday\s*loan\b
+payday
 \bpharmacy\b
 phenergan
 proair
