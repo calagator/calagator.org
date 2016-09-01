@@ -22,6 +22,7 @@ azithromycin
 \bbuy\s+(cheap|generic)\b
 \bcash\s*loans\b
 buspar
+butenafine
 celexa
 celebrex
 cephalexin
@@ -73,6 +74,7 @@ seroquel
 \bsex\s+tape\b
 sildenafil
 singulair
+solubility
 sulfate
 synthroid
 tadalafil
