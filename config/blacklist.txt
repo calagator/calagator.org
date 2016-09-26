@@ -100,4 +100,4 @@ zoloft
 \bзнакомства\s+свингеры\s+тюмень\b
 painmanage@hotmail.com
 painrelief@hotmail.com
-\d+\s?(g|mg)
+\d+\s?mg
