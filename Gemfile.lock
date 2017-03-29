@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/calagator/calagator.git
-  revision: 91ef337180969ce66d4ddf4164ba32b98a5b3602
+  revision: 61cef6e37b3e619e79aa3caf717fc237d08dbdce
   specs:
     calagator (1.0.0.rc3)
       acts-as-taggable-on (~> 3.5)
