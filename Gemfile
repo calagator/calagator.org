@@ -35,6 +35,8 @@ gem 'capistrano-rails', group: :development
 
 gem 'progress_bar'
 
+gem "recaptcha", require: "recaptcha/rails"
+
 # Performance and error monitoring
 gem 'airbrake'
 gem 'newrelic_rpm'
