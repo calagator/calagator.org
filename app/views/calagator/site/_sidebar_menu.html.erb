@@ -1,0 +1,23 @@
+<h4>Get Started</h4>
+<ul>
+  <li><%= link_to "Find local events", about_url(anchor: "find_local_events") %></li>
+  <li><%= link_to "Share local events", about_url(anchor: "share_local_events") %></li>
+  <li><%= link_to "Get involved", about_url(anchor: "get_involved") %></li>
+  <li><%= link_to "Find out about us", about_url %></li>
+</ul>
+
+<h4>Subscribe To</h4>
+<ul>
+  <li><%= link_to "iCalendar feed", icalendar_feed_link %></li>
+  <li><%= link_to "Atom feed", atom_feed_link %></li>
+</ul>
+
+<div class="stumptownsyn-donate-block">
+    <h5 class="stumptownsyn-title">Powered by</h5>
+	<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+	<input type="hidden" name="cmd" value="_s-xclick">
+	<input type="hidden" name="hosted_button_id" value="5357WV822D5GW">
+	<input type="image" src="http://stumptownsyndicate.org/wp-content/blogs.dir/1/2014/12/syndicate_donate_button.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+	<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+	</form>
+</div>
