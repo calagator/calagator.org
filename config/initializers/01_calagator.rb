@@ -10,7 +10,7 @@ Calagator.setup do |config|
 
   # Email address of administrator that will get exception notifications
   # and requests for assistance from users:
-  config.administrator_email = 'calagator@stumptownsyndicate.org'
+  config.administrator_email = 'admin@calagator.org'
 
   # Admin username and password to use when accessing /admin pages
   config.admin_username = 'admin'
