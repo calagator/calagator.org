@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+# Fixing deprecated 'last_comment' method in newer versions of rake
+gem 'rake', '< 11.0'
+
 gem 'calagator', git: 'https://github.com/calagator/calagator.git'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
