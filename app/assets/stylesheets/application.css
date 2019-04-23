@@ -14,3 +14,27 @@
  *= require_self
  */
 //= require calagator
+
+#global_header #patreon {
+  font-weight: bold;
+  text-align: right;
+  float: right;
+  margin-right: 400px;
+  margin-top: 50px;
+}
+
+#global_header #patreon a {
+	font-size: 150%;
+	color: white;
+	padding: 10px;
+	background-color: #445544;
+	border: 1px white solid;
+}
+
+@media (max-width: 960px) {
+	#global_header #patreon {
+		margin-top: 3em;
+		margin-right: 150px;
+		font-size: 60%;
+	}
+}
