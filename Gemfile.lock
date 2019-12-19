@@ -160,7 +160,7 @@ GEM
     puma_worker_killer (0.0.3)
       get_process_mem (~> 0.1)
       puma (~> 2.7)
-    rack (1.6.5)
+    rack (1.6.12)
     rack-contrib (1.4.0)
       git-version-bump (~> 0.15)
       rack (~> 1.4)
