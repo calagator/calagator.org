@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/calagator/calagator.git
-  revision: b80786444d0d741c4462457fc6ce0418a6ef6433
+  revision: 143d916a1bf5fb652def420e7c030a3512c85adc
   specs:
     calagator (1.1.0)
       acts-as-taggable-on (~> 5.0)
@@ -115,7 +115,7 @@ GEM
     jquery-ui-rails (5.0.5)
       railties (>= 3.2.16)
     json (2.3.0)
-    loofah (2.4.0)
+    loofah (2.5.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     loofah-activerecord (2.0.0)
@@ -128,7 +128,7 @@ GEM
       nokogiri (~> 1.10)
     mime-types (3.3.1)
       mime-types-data (~> 3.2015)
-    mime-types-data (3.2019.1009)
+    mime-types-data (3.2020.0425)
     mini_mime (1.0.2)
     mini_portile2 (2.4.0)
     minitest (5.14.0)
@@ -150,11 +150,9 @@ GEM
     progress_bar (1.0.0)
       highline (~> 1.6.1)
       options (~> 2.3.0)
-    public_suffix (2.0.5)
-    puma (2.16.0)
-    puma_worker_killer (0.0.3)
-      get_process_mem (~> 0.1)
-      puma (~> 2.7)
+    public_suffix (4.0.4)
+    puma (4.3.3)
+      nio4r (~> 2.0)
     rack (1.6.13)
     rack-contrib (1.8.0)
       rack (~> 1.4)
@@ -237,7 +235,7 @@ GEM
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (>= 1.1, < 3)
-    sassc (2.2.1)
+    sassc (2.3.0)
       ffi (~> 1.9)
     sassc-rails (2.1.2)
       railties (>= 4.0.0)
@@ -265,7 +263,7 @@ GEM
     thor (1.0.1)
     thread_safe (0.3.6)
     tilt (2.0.10)
-    tzinfo (1.2.6)
+    tzinfo (1.2.7)
       thread_safe (~> 0.1)
     uglifier (1.3.0)
       execjs (>= 0.3.0)
