@@ -115,6 +115,11 @@ GEM
     jquery-ui-rails (5.0.5)
       railties (>= 3.2.16)
     json (2.3.0)
+    lograge (0.11.2)
+      actionpack (>= 4)
+      activesupport (>= 4)
+      railties (>= 4)
+      request_store (~> 1.0)
     loofah (2.5.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -198,6 +203,8 @@ GEM
     rdoc (6.2.1)
     recaptcha (5.4.1)
       json
+    request_store (1.5.0)
+      rack (>= 1.4)
     rest-client (2.1.0)
       http-accept (>= 1.7.0, < 2.0)
       http-cookie (>= 1.0.2, < 2.0)
@@ -292,6 +299,7 @@ DEPENDENCIES
   calagator!
   jbuilder (~> 2.0)
   jquery-rails
+  lograge
   newrelic_rpm
   progress_bar
   puma

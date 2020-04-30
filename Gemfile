@@ -10,6 +10,8 @@ gem 'rails', '4.2.11'
 
 gem 'rails_12factor', group: :production
 
+gem 'lograge'
+
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 
