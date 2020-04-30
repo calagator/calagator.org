@@ -2,12 +2,8 @@ sudo: false
 language: ruby
 cache: bundler
 rvm:
-- 2.2.8
+- 2.5.7
 script:
 - bin/rake db:migrate
 - bin/rake assets:precompile
 - bin/rspec
-after_success:
-- openssl aes-256-cbc -K $encrypted_b0620c3c48f9_key -iv $encrypted_b0620c3c48f9_iv
-  -in config/deploy/deploy_rsa.enc -out config/deploy/deploy_rsa -d
-- "[[ $TRAVIS_PULL_REQUEST = 'false' && $TRAVIS_BRANCH = 'master' ]] && bundle exec cap production deploy"
