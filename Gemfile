@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Fixing deprecated 'last_comment' method in newer versions of rake
-gem 'rake', '< 11.0'
+gem 'rake', '< 13.0'
 
 gem 'calagator', git: 'https://github.com/calagator/calagator.git'
 
