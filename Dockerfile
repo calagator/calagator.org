@@ -1,4 +1,4 @@
-FROM ruby:2.5.7
+FROM ruby:2.5.8
 ARG git_sha
 ENV LANG C.UTF-8
 RUN apt-get update \
