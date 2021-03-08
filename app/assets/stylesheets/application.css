@@ -10,10 +10,10 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+ *= require calagator
  *= require_tree .
  *= require_self
  */
-//= require calagator
 
 #global_header #patreon {
   font-weight: bold;
@@ -24,17 +24,17 @@
 }
 
 #global_header #patreon a {
-	font-size: 120%;
-	color: white;
-	padding: 10px;
-	background-color: #445544;
-	border: 1px white solid;
+  font-size: 120%;
+  color: white;
+  padding: 10px;
+  background-color: #445544;
+  border: 1px white solid;
 }
 
 @media (max-width: 960px) {
-	#global_header #patreon {
-		margin-top: 55px;
-		margin-right: 15px;
-		font-size: 70%;
-	}
+  #global_header #patreon {
+    margin-top: 55px;
+    margin-right: 15px;
+    font-size: 70%;
+  }
 }

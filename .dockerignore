@@ -1,0 +1,16 @@
+.env
+.git
+.gitignore
+.bundle
+.DS_Store
+.docker*
+Dockerfile
+docker-compose*
+./vendor
+.bundle
+tmp/cache/*
+tmp/pids/*
+tmp/sessions/*
+tmp/sockets/*
+log/*
+
