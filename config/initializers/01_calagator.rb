@@ -26,7 +26,7 @@ Calagator.setup do |config|
 
   # Search engine to use for searching events.
   # Values: :sql, :sunspot. Defaults to :sql.
-  config.search_engine = :sunspot
+  # config.search_engine = :sunspot
 
   # Set the iCalendar SEQUENCE, which should be increased each time an event
   # is updated. If an admin needs to forcefully increment the SEQUENCE for all
@@ -86,6 +86,6 @@ Calagator.setup do |config|
   }
 
   # Patterns for detecting spam events and venues
-  config.blacklist_patterns = File.read(Rails.root.join('config', 'blacklist.txt')).lines.map{|l| Regexp.new(l) }
+  config.denylist_patterns = File.read(Rails.root.join('config', 'denylist.txt')).lines.map{|l| Regexp.new(l) }
 
 end
