@@ -5,7 +5,7 @@ gem 'rake', '< 11.0'
 
 gem 'calagator', '2.0.0.pre.0'
 
-gem 'rails', '~> 5.0'
+gem 'rails', '~> 5.2'
 
 gem 'rails_12factor', group: :production
 
