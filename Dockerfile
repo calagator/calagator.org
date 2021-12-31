@@ -1,11 +1,10 @@
-FROM ruby:2.5.9
+FROM ruby:2.7.5
 ARG git_sha
 ENV LANG C.UTF-8
 RUN apt-get update \
     && apt-get install --no-install-recommends -y libpq-dev postgresql-client sqlite3 libsqlite3-dev libssl-dev nodejs \
     && rm -rf /var/lib/apt/lists/*
-RUN gem install bundler -v '< 2' \
-    && bundle config --global frozen 1 \
+RUN bundle config --global frozen 1 \
     && bundle config github.https true \
     && bundle config set deployment 'true'
 COPY Gemfile Gemfile.lock .ruby-version /app/
