@@ -1,5 +1,7 @@
+# frozen_string_literal: true
 # This migration comes from calagator (originally 2)
-class CreateVenues < ActiveRecord::Migration
+
+class CreateVenues < ActiveRecord::Migration[4.2]
   def self.up
     create_table :venues do |t|
       t.string :title
@@ -9,7 +11,6 @@ class CreateVenues < ActiveRecord::Migration
 
       t.timestamps
     end
-
   end
 
   def self.down

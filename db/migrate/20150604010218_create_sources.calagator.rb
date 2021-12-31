@@ -1,5 +1,7 @@
+# frozen_string_literal: true
 # This migration comes from calagator (originally 3)
-class CreateSources < ActiveRecord::Migration
+
+class CreateSources < ActiveRecord::Migration[4.2]
   def self.up
     create_table :sources do |t|
       t.string :title

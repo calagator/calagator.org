@@ -1,5 +1,7 @@
+# frozen_string_literal: true
 # This migration comes from calagator (originally 20080705163959)
-class ChangeDurationToEndTime < ActiveRecord::Migration
+
+class ChangeDurationToEndTime < ActiveRecord::Migration[4.2]
   def self.up
     add_column :events, :end_time, :datetime
     remove_column :events, :duration

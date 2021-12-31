@@ -1,5 +1,7 @@
+# frozen_string_literal: true
 # This migration comes from calagator (originally 20150407014752)
-class AddTaggingsCounterCacheToTags < ActiveRecord::Migration
+
+class AddTaggingsCounterCacheToTags < ActiveRecord::Migration[4.2]
   def self.up
     add_column :tags, :taggings_count, :integer, default: 0
 

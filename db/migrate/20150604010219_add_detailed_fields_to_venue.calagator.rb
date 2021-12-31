@@ -1,5 +1,7 @@
+# frozen_string_literal: true
 # This migration comes from calagator (originally 4)
-class AddDetailedFieldsToVenue < ActiveRecord::Migration
+
+class AddDetailedFieldsToVenue < ActiveRecord::Migration[4.2]
   def self.up
     add_column :venues, :street_address, :string
     add_column :venues, :locality, :string
