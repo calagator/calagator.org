@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 # Fixing deprecated 'last_comment' method in newer versions of rake
 gem 'rake', '< 11.0'
 
-gem 'calagator', '2.0.0.pre.0'
+gem 'calagator', '2.0.0.pre.1'
 
 gem 'rails', '~> 5.2'
 
