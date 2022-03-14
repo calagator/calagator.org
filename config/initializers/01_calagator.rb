@@ -16,14 +16,6 @@ Calagator.setup do |config|
   config.admin_username = 'admin'
   config.admin_password = ENV['CALAGATOR_ADMIN_PASSWORD']
 
-  # API key for Meetup.com, get your own from: http://www.meetup.com/meetup_api/key/
-  config.meetup_api_key = ENV['MEETUP_API_KEY']
-
-  # Access token for Facebook:
-  # 1. Create a new app for your site at https://developers.facebook.com/apps
-  # 2. Visit https://developers.facebook.com/tools/access_token/ to find the "App Token"
-  config.facebook_access_token = ENV['FACEBOOK_ACCESS_TOKEN']
-
   # Search engine to use for searching events.
   # Values: :sql, :sunspot. Defaults to :sql.
   config.search_engine = :sunspot
@@ -86,6 +78,6 @@ Calagator.setup do |config|
   }
 
   # Patterns for detecting spam events and venues
-  config.blacklist_patterns = File.read(Rails.root.join('config', 'blacklist.txt')).lines.map{|l| Regexp.new(l) }
+  config.denylist_patterns = File.read(Rails.root.join('config', 'denylist.txt')).lines.map{|l| Regexp.new(l) }
 
 end

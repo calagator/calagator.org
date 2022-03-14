@@ -16,3 +16,4 @@
 !/log/.keep
 /tmp
 solr
+.DS_Store

@@ -3,10 +3,9 @@ source 'https://rubygems.org'
 # Fixing deprecated 'last_comment' method in newer versions of rake
 gem 'rake', '< 11.0'
 
-gem 'calagator', git: 'https://github.com/calagator/calagator.git'
+gem 'calagator', '2.0.0.pre.1'
 
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.11'
+gem 'rails', '~> 5.2'
 
 gem 'rails_12factor', group: :production
 
@@ -37,6 +36,8 @@ gem 'puma'
 gem 'progress_bar'
 
 gem "recaptcha", require: "recaptcha/rails"
+
+gem 'paper_trail_manager', github: 'fusion94/paper_trail_manager', ref: 'b8630cd0e3318ad0929b80a701a18175402a4944'
 
 # Performance and error monitoring
 gem 'airbrake'
