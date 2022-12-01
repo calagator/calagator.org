@@ -63,6 +63,7 @@ furesimide
 furosemide
 \bgeneric\s+cost\b
 glucophage
+gnlevaqu.com
 hydrochlorothiazide
 hydrocodone
 inderal
@@ -71,7 +72,9 @@ indomethacin
 kamagra
 klonopin
 lexapro
+levaquin
 levitra
+levofloxacin
 masturbation
 medrol
 megashare
